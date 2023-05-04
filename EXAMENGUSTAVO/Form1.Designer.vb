@@ -22,6 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
@@ -67,13 +68,26 @@ Partial Class Form1
         Me.Label28 = New System.Windows.Forms.Label()
         Me.Label29 = New System.Windows.Forms.Label()
         Me.Label30 = New System.Windows.Forms.Label()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.CalendarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FechaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.HotaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Label31 = New System.Windows.Forms.Label()
+        Me.Label32 = New System.Windows.Forms.Label()
+        Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.Button5 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.EXAMENGUSTAVO.My.Resources.Resources.LOGO
-        Me.PictureBox1.Location = New System.Drawing.Point(0, 1)
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 27)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(270, 125)
         Me.PictureBox1.TabIndex = 0
@@ -132,7 +146,7 @@ Partial Class Form1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(141, 584)
+        Me.Button1.Location = New System.Drawing.Point(79, 615)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 7
@@ -160,7 +174,7 @@ Partial Class Form1
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(294, 584)
+        Me.Label6.Location = New System.Drawing.Point(232, 615)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(213, 15)
         Me.Label6.TabIndex = 10
@@ -169,7 +183,7 @@ Partial Class Form1
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(294, 608)
+        Me.Label7.Location = New System.Drawing.Point(232, 639)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(262, 15)
         Me.Label7.TabIndex = 11
@@ -178,7 +192,7 @@ Partial Class Form1
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(294, 632)
+        Me.Label8.Location = New System.Drawing.Point(232, 663)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(91, 15)
         Me.Label8.TabIndex = 12
@@ -187,7 +201,7 @@ Partial Class Form1
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(535, 584)
+        Me.Label9.Location = New System.Drawing.Point(473, 615)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(31, 15)
         Me.Label9.TabIndex = 13
@@ -196,7 +210,7 @@ Partial Class Form1
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(562, 608)
+        Me.Label10.Location = New System.Drawing.Point(500, 639)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(31, 15)
         Me.Label10.TabIndex = 14
@@ -205,7 +219,7 @@ Partial Class Form1
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(391, 632)
+        Me.Label11.Location = New System.Drawing.Point(329, 663)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(25, 15)
         Me.Label11.TabIndex = 15
@@ -376,7 +390,7 @@ Partial Class Form1
         '
         Me.Label23.AutoSize = True
         Me.Label23.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label23.Location = New System.Drawing.Point(948, 591)
+        Me.Label23.Location = New System.Drawing.Point(957, 625)
         Me.Label23.Name = "Label23"
         Me.Label23.Size = New System.Drawing.Size(92, 32)
         Me.Label23.TabIndex = 36
@@ -386,7 +400,7 @@ Partial Class Form1
         '
         Me.Label24.AutoSize = True
         Me.Label24.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label24.Location = New System.Drawing.Point(1046, 605)
+        Me.Label24.Location = New System.Drawing.Point(1055, 639)
         Me.Label24.Name = "Label24"
         Me.Label24.Size = New System.Drawing.Size(37, 15)
         Me.Label24.TabIndex = 37
@@ -442,7 +456,7 @@ Partial Class Form1
         '
         Me.Label29.AutoSize = True
         Me.Label29.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label29.Location = New System.Drawing.Point(877, 497)
+        Me.Label29.Location = New System.Drawing.Point(888, 530)
         Me.Label29.Name = "Label29"
         Me.Label29.Size = New System.Drawing.Size(109, 15)
         Me.Label29.TabIndex = 43
@@ -451,17 +465,118 @@ Partial Class Form1
         'Label30
         '
         Me.Label30.AutoSize = True
-        Me.Label30.Location = New System.Drawing.Point(991, 498)
+        Me.Label30.Location = New System.Drawing.Point(1002, 531)
         Me.Label30.Name = "Label30"
         Me.Label30.Size = New System.Drawing.Size(25, 15)
         Me.Label30.TabIndex = 44
         Me.Label30.Text = "$$$"
         '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CalendarioToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(1141, 24)
+        Me.MenuStrip1.TabIndex = 45
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'CalendarioToolStripMenuItem
+        '
+        Me.CalendarioToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FechaToolStripMenuItem, Me.HotaToolStripMenuItem})
+        Me.CalendarioToolStripMenuItem.Name = "CalendarioToolStripMenuItem"
+        Me.CalendarioToolStripMenuItem.Size = New System.Drawing.Size(74, 20)
+        Me.CalendarioToolStripMenuItem.Text = "calendario"
+        '
+        'FechaToolStripMenuItem
+        '
+        Me.FechaToolStripMenuItem.Name = "FechaToolStripMenuItem"
+        Me.FechaToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.F), System.Windows.Forms.Keys)
+        Me.FechaToolStripMenuItem.Size = New System.Drawing.Size(143, 22)
+        Me.FechaToolStripMenuItem.Text = "fecha"
+        '
+        'HotaToolStripMenuItem
+        '
+        Me.HotaToolStripMenuItem.Name = "HotaToolStripMenuItem"
+        Me.HotaToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.H), System.Windows.Forms.Keys)
+        Me.HotaToolStripMenuItem.Size = New System.Drawing.Size(143, 22)
+        Me.HotaToolStripMenuItem.Text = "hora"
+        '
+        'Label31
+        '
+        Me.Label31.AutoSize = True
+        Me.Label31.Location = New System.Drawing.Point(1041, 39)
+        Me.Label31.Name = "Label31"
+        Me.Label31.Size = New System.Drawing.Size(27, 15)
+        Me.Label31.TabIndex = 46
+        Me.Label31.Text = "----"
+        '
+        'Label32
+        '
+        Me.Label32.AutoSize = True
+        Me.Label32.Location = New System.Drawing.Point(1041, 76)
+        Me.Label32.Name = "Label32"
+        Me.Label32.Size = New System.Drawing.Size(27, 15)
+        Me.Label32.TabIndex = 47
+        Me.Label32.Text = "----"
+        '
+        'ProgressBar1
+        '
+        Me.ProgressBar1.Location = New System.Drawing.Point(82, 496)
+        Me.ProgressBar1.Name = "ProgressBar1"
+        Me.ProgressBar1.Size = New System.Drawing.Size(350, 23)
+        Me.ProgressBar1.TabIndex = 48
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(357, 530)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 49
+        Me.Button2.Text = "100"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(82, 467)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(75, 23)
+        Me.Button3.TabIndex = 50
+        Me.Button3.Text = "start"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(357, 466)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(75, 23)
+        Me.Button4.TabIndex = 51
+        Me.Button4.Text = "stop"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Timer1
+        '
+        '
+        'Button5
+        '
+        Me.Button5.Location = New System.Drawing.Point(82, 530)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(75, 23)
+        Me.Button5.TabIndex = 52
+        Me.Button5.Text = "0"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1141, 682)
+        Me.ClientSize = New System.Drawing.Size(1141, 723)
+        Me.Controls.Add(Me.Button5)
+        Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.ProgressBar1)
+        Me.Controls.Add(Me.Label32)
+        Me.Controls.Add(Me.Label31)
         Me.Controls.Add(Me.Label30)
         Me.Controls.Add(Me.Label29)
         Me.Controls.Add(Me.Label28)
@@ -507,9 +622,13 @@ Partial Class Form1
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.MenuStrip1)
+        Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Form1"
         Me.Text = "Form1"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -560,4 +679,16 @@ Partial Class Form1
     Friend WithEvents Label28 As Label
     Friend WithEvents Label29 As Label
     Friend WithEvents Label30 As Label
+    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents CalendarioToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents FechaToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents HotaToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Label31 As Label
+    Friend WithEvents Label32 As Label
+    Friend WithEvents ProgressBar1 As ProgressBar
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Button4 As Button
+    Friend WithEvents Timer1 As Timer
+    Friend WithEvents Button5 As Button
 End Class

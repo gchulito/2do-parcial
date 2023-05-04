@@ -1,4 +1,6 @@
-﻿Public Class Form1
+﻿Imports System.Windows.Forms.VisualStyles.VisualStyleElement
+
+Public Class Form1
 
 
 
@@ -104,6 +106,58 @@
     End Sub
 
     Private Sub Label29_Click(sender As Object, e As EventArgs) Handles Label29.Click
+
+    End Sub
+
+    Private Sub MenuStrip1_ItemClicked(sender As Object, e As ToolStripItemClickedEventArgs) Handles MenuStrip1.ItemClicked
+
+    End Sub
+
+    Private Sub FechaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FechaToolStripMenuItem.Click
+        Label31.Text = DateString
+
+    End Sub
+
+    Private Sub HotaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HotaToolStripMenuItem.Click
+        Label32.Text = TimeString
+
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        For l As Integer = 1 To 1000
+            ProgressBar1.Increment(l)
+
+
+
+
+        Next l
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Timer1.Start()
+
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Timer1.Stop()
+    End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        ProgressBar1.Increment(1)
+
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+
+
+        ProgressBar1.Minimum = 0
+
+        ProgressBar1.Value = ProgressBar1.Minimum
+
+
+
+
+
 
     End Sub
 End Class
